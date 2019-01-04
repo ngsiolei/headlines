@@ -5,7 +5,7 @@ const parseHeadlines = require('./parse.js');
 const today = new Date();
 const year = today.getFullYear();
 const month = String(today.getMonth() + 1);
-let date = today.getDate();
+let date = String(today.getDate());
 const yearMonth = [year, 1 === month.length ? '0' + month : month].join('-');
 date = 1 === date.length ? '0' + date : date;
 
@@ -25,5 +25,6 @@ fetchHeadlines(yearMonth, date, (err, data) => {
       });
       return;
     }
+    console.error('Something wrong!');
   });
 });
