@@ -1,7 +1,6 @@
 'use strict';
 
 const http = require('http');
-const fs = require('fs');
 
 const fetchHeadlines = (yearMonth, date, cb) => {
   const options = {
