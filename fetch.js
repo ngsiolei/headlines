@@ -10,6 +10,7 @@ const fetchHeadlines = (yearMonth, date, cb) => {
     method: 'GET',
   };
   const req = http.request(options, res => {
+    res.setEncoding('utf8');
     let content = '';
     res.on('data', d => {
       content += d;
