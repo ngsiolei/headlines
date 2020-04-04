@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "htmlparser2": "^4.0.0",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.3"
   }
 }
